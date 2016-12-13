@@ -1,0 +1,65 @@
+
+.about{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: strech;
+  height: 830px;
+  padding-top: 20px;
+}
+
+.about__left, .about__right{
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: strech;
+}
+ 
+.about__me, .about__item{
+  align-content: flex-start;
+ width: 50%;
+}
+
+
+.about__me-foto{
+  width: 443px;
+  height: 390px;
+  background-image: url("img/foto.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.skills{
+  width: 100%;
+  padding-left: 36px;
+}
+
+.text{
+    margin: 50px 30px 70px 0;
+    text-align: left;
+}
+
+.frontend_item{
+	display: inline-block;
+	padding: 20px;
+}
+
+.frontend{
+	padding-left: 50px;
+
+}
+
+.g-circles {
+  fill: none;
+  stroke-width: 15;
+  
+}
+.sector {
+    stroke-dasharray: 0 722;
+    transition: all 1s;
+}
+
+.g-circles:hover .sector {
+   stroke-dasharray: 150 283;
+}

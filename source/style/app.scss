@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+$red: #e44845;
+$blue: #009688;
+$black: #373e42;
+$grey: #d6d6d6;
+$green: #00bfa5;
+$marengo: #455a64;
+
+$container-width: 1800px;
+$footer-height: 180px;
+$body-font: 'bernier_regularregular', sans-serif;
+
+@import 'common/mixins';
+@import 'common/adjustment';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/fonts';
+@import 'common/author';
+@import 'common/about';
+@import 'common/works';
+@import 'common/map';
+@import 'common/blog';
+@import 'common/menu';
+@import 'common/socials';
+@import 'common/flip';
+@import 'common/reviews';
+
+
+
+
+
+
+
+
+
+
+

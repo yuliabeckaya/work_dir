@@ -1,0 +1,35 @@
+.reviews
+	.reviews__title
+			h1 ЧТО ОБО МНЕ ГОВОРЯТ
+	.reviews__content
+		.reviews-left
+			.reviews-fa
+				span.fontawesome-quote-left 
+				.review 
+					p Все хорошо. Все живы. Во время эксперимента ни один котик не пострадал
+				.review__author
+					img.review__author-img(src='assets/css/img/ava.jpg', alt='')
+					p Дмитрий Ковальчук
+					p Основатель Loftschool
+		.reviews-right
+			.reviews-fa
+				span.fontawesome-quote-left 
+				.review 
+					p Все хорошо. Все живы. Во время эксперимента ни один котик не пострадал
+				.review__author
+					img.review__author-img(src='assets/css/img/ava.jpg', alt='')
+					p Дмитрий Ковальчук
+					p Основатель Loftschool
+	.contact__form__wrapper
+		.contact__form-blur
+	.contact__form
+		h2 CВЯЗАТЬСЯ СО МНОЙ
+		form#application(action='application.php', method='POST', name=' application ')
+			input#applicationName(name='name', maxlength='20', placeholder='Имя', required='')
+			input#applicationEmail(name='email', type='email', maxlength='20', placeholder='E-mail', required='')
+			textarea(cols='30', rows='5', name='message', placeholder='Ваше сообщение', required=' ')
+		#back_btn
+			p
+				input(type='submit', value='Отправить')
+			p
+				input(type='submit', value='Очистить')

@@ -1,0 +1,18 @@
+
+.menu{
+  background-color: $blue;
+  opacity: .5;
+  height: 100%;
+  text-align: center;
+}
+
+.menu__item{
+  padding: 50px;
+  font-size: 60px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__list{
+  padding-top: 10%;
+}

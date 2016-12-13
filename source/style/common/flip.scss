@@ -1,0 +1,207 @@
+.container__author{
+	background-image: url("bg_author.png");
+	height: 900px;
+	background-position: center;
+	background-size: cover;
+}
+
+.author__header{
+	height: 150px;
+    text-align: right;
+    padding: 50px 50px 0 0;
+
+}
+
+.author__btn{
+	width: 184px;
+	height: 44px;
+	border: 1px solid #fff;
+	border-radius: 5%;
+	font-family: 'robotoregular';
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 30px;
+
+		&:hover{
+			color: $blue;
+			border: 1px solid $blue;
+		}
+}
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+	margin: 0 auto;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 380px;
+	height: 410px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	background: #e5f7f4;
+    opacity: .85;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+.user__author{
+	text-align: center;
+    left: 0;
+    vertical-align: middle;
+    margin: 22px auto;
+}    
+.user__author-avatar{
+	@include inlineblock(middle);
+	height: 143px;
+	width: 143px;
+	background-color:#fff;
+	@include border-radius(50%);
+	overflow: hidden;
+	margin-bottom: 20px;
+
+}
+
+.user__author-pic {
+	display: block;
+}
+
+.user__author-info-name, .user__author-info-custom{
+	font-color: $black;
+	font-family: 'robotoregular';
+}
+.user__author-name{
+	font-size: 28px;
+}
+
+.socials__author{
+	text-align: center;
+	margin-bottom: 28px;
+
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+input {
+	border: none;
+	padding: 0;
+	-webkit-appearance: none;
+	font-family: 'robotoregular';
+}
+
+/* ---------- LOGIN ---------- */
+
+#login {
+	margin: 114px auto;
+	width: 280px;
+}
+
+#login form span {
+	background-color: #363b41;
+	color: #fff;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login form input {
+	height: 50px;
+	outline:none;
+}
+
+#login form input[type="text"], input[type="password"] {
+	background-color: #fff;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 198px;
+}
+
+#login form input:focus {
+	color:#fff;
+}
+
+#back_btn, #front_btn{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+#front_btn input[type="button"], 
+#back_btn input[type="button"] {
+	font-weight: bold;
+	color: #fff;
+	background-color: $green;
+	cursor:pointer;
+	width: 126.7px;
+	height: 50px;
+}
+#back_btn input[type="submit"], 
+#back_btn input[type="button"] {
+	font-weight: bold;
+	color: #fff;
+	background-color: $green;
+	cursor:pointer;
+	width: 190px;
+	height: 50px;
+}
+
+#front_btn input[type="button"]:hover, 
+#back_btn input[type="button"]:hover,
+#back_btn input[type="submit"]:hover {
+	background-color: $blue;
+}
+
+//#back_btn input[type="submit"]:hover {
+//	background-color: $blue;
+//}
+
+#login > p {
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+
+#login fieldset{
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+.footer__author{
+	height: 60px;
+	margin-top: -60px;
+	text-align: center;
+	color: #fff;
+}

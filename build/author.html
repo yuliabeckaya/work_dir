@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Author</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/fonts/*.*">
+    <script src="assets/js/foundation.js" defer></script>
+    <script src="assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="container__author">
+      <div class="author__header"><a class="author__btn" href="#back">Авторизоваться</a></div>
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <div class="user__author">
+              <div class="user__author-avatar">
+                <div class="user__author-pic"><img class="user__author-img" src="assets/img/ava.jpg" alt=""></div>
+              </div>
+              <div class="user__author-info">
+                <div class="user__author-info-name">
+                  <p class="user__author-name">Yulia Betskaya</p>
+                </div>
+                <div class="ser__author-info-custom">
+                  <p>Личный сайт веб-разработчика</p>
+                </div>
+              </div>
+            </div>
+            <div class="socials__author">
+              <div class="socials">
+                <ul class="socials__list-header">
+                  <li class="socials__item"><a class="socials__link" href="https://vk.com/kbicbka"><img class="socials__icon-vk" src="assets/css/sprite/vk.svg" alt=""></a></li>
+                  <li class="socials__item"><a class="socials__link" href="https://github.com/yuliabeckaya"><img class="socials__icon-github" src="assets/css/sprite/github.svg" alt=""></a></li>
+                  <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/russkiy"><img class="socials__icon-in" src="assets/css/sprite/in.svg" alt=""></a></li>
+                </ul>
+              </div>
+            </div>
+            <div id="front_btn">
+              <p>
+                <input type="button" value="Мои работы" onclick="works.html">
+              </p>
+              <p>
+                <input type="button" value="Обо мне" onclick="hompage.html">
+              </p>
+              <p>
+                <input type="button" value="Блог" onclick="blog.html">
+              </p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="clr">
+              <div id="login">
+                <form action="javascript:void(0);" method="get">
+                  <fieldset class="clearfix">
+                    <p><span class="fontawesome-user"></span>
+                      <input type="text" value="Логин" onblur="if(this.value == '') this.value = 'Логин'" onfocus="if(this.value == 'Логин') this.value = ''" required="">
+                    </p>
+                    <p><span class="fontawesome-key"></span>
+                      <input type="password" value="Пароль" onblur="if(this.value == '') this.value = 'Пароль'" onfocus="if(this.value == 'Пароль') this.value = ''" required="">
+                    </p>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+            <div id="back_btn">
+              <p>
+                <input type="button" value="Главная" onclick="hompage.html">
+              </p>
+              <p>
+                <input type="submit" value="Войти">
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__author">
+      <p>© Юлия Бецкая | создано с любовью в LoftSchool | 2016</p>
+    </div>
+  </body>
+</html>

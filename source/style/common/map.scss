@@ -1,0 +1,44 @@
+.map{
+	height: 930px;
+	background-image: url(img/map.png);
+	background-position: center;
+	background-size: cover;
+	padding-top: 250px;
+	
+}
+
+.contacts{
+	width: 380px;
+    height: 300px;
+    margin: 0 auto;
+    background: #e5f7f4;
+    opacity: .8;
+    border-radius: 3%;
+    padding: 20px 0px 0px 0px;
+       
+}
+.contacts-text{
+	margin-left: 50px;
+
+}
+
+.contants_content{
+	padding: 30px;
+}
+
+.cnt-icon{
+	width: 30px;
+	height: 30px;
+}
+
+.cnt-text{
+	width: 325px;
+	height: 50px;
+	margin-left: 20px;
+}
+
+.cnt{
+	display: flex;
+	flex-flow: row nowrap;
+}
+

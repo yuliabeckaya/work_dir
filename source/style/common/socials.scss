@@ -1,0 +1,32 @@
+.socials__list-header {
+	@include inlineblock();
+	margin-left: -20px;
+}
+
+
+.socials__item {
+	@include inlineblock(middle);
+	float: left;
+	@extend %clearfix;
+	padding: 20px;
+
+	
+}
+.socials__icon-vk{
+	
+	&:hover {
+		background-image: url("sprite/vk_hover.svg");
+	}
+}
+.socials__icon-github{
+	
+	&:hover {
+		background-image: url("sprite/github_hover.svg");
+	}
+}
+.socials__icon-in{
+	
+	&:hover {
+		background-image: url("sprite/in_hover.svg");
+	}
+}

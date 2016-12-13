@@ -1,0 +1,42 @@
+.container__author
+	.author__header
+		a.author__btn(href='#back') Авторизоваться
+	.flip-container(ontouchstart="this.classList.toggle('hover');")
+		.flipper
+			.front
+				.user__author
+					.user__author-avatar
+						.user__author-pic
+							img.user__author-img(src='assets/img/ava.jpg', alt='')
+					.user__author-info
+						.user__author-info-name
+							p.user__author-name Yulia Betskaya
+						.ser__author-info-custom
+							p Личный сайт веб-разработчика
+				.socials__author
+					include ../common/_socials
+				#front_btn
+					p
+						input(type='button', value='Мои работы', onclick='works.html')
+					p
+						input(type='button', value='Обо мне', onclick='hompage.html')
+					p
+						input(type='button', value='Блог', onclick='blog.html')
+			.back
+				.clr
+					#login
+						form(action='javascript:void(0);', method='get')
+							fieldset.clearfix
+								p
+									span.fontawesome-user
+									input(type='text', value='Логин', onblur="if(this.value == '') this.value = 'Логин'", onfocus="if(this.value == 'Логин') this.value = ''", required='')
+								p
+									span.fontawesome-key
+									input(type='password', value='Пароль', onblur="if(this.value == '') this.value = 'Пароль'", onfocus="if(this.value == 'Пароль') this.value = ''", required='')
+				#back_btn
+					p
+						input(type='button', value='Главная', onclick='hompage.html')
+					p
+						input(type='submit', value='Войти')
+.footer__author
+	p © Юлия Бецкая | создано с любовью в LoftSchool | 2016
