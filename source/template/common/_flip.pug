@@ -1,13 +1,13 @@
 .container__author
 	.author__header
-		a.author__btn(href='#back') Авторизоваться
-	.flip-container(ontouchstart="this.classList.toggle('hover');")
+		button.author__btn(onclick="document.querySelector('#flip-toggle').classList.toggle('hover');") Авторизоваться
+	#flip-toggle.flip-container
 		.flipper
 			.front
 				.user__author
 					.user__author-avatar
 						.user__author-pic
-							img.user__author-img(src='assets/img/ava.jpg', alt='')
+							img.user__author-img(src='assets/css/img/ava.jpg', alt='')
 					.user__author-info
 						.user__author-info-name
 							p.user__author-name Yulia Betskaya
@@ -17,11 +17,11 @@
 					include ../common/_socials
 				#front_btn
 					p
-						input(type='button', value='Мои работы', onclick='works.html')
+						input(type='button', value='Мои работы', onclick="parent.location='works.html'")
 					p
-						input(type='button', value='Обо мне', onclick='hompage.html')
+						input(type='button', value='Обо мне', onclick="parent.location='index.html'")
 					p
-						input(type='button', value='Блог', onclick='blog.html')
+						input(type='button', value='Блог', onclick="parent.location='blog.html'")
 			.back
 				.clr
 					#login
@@ -35,7 +35,7 @@
 									input(type='password', value='Пароль', onblur="if(this.value == '') this.value = 'Пароль'", onfocus="if(this.value == 'Пароль') this.value = ''", required='')
 				#back_btn
 					p
-						input(type='button', value='Главная', onclick='hompage.html')
+						input(type='button', value='Главная', onclick="parent.location='index.html'")
 					p
 						input(type='submit', value='Войти')
 .footer__author

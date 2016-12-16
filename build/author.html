@@ -18,13 +18,15 @@
   </head>
   <body>
     <div class="container__author">
-      <div class="author__header"><a class="author__btn" href="#back">Авторизоваться</a></div>
-      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="author__header">
+        <button class="author__btn" onclick="document.querySelector('#flip-toggle').classList.toggle('hover');">Авторизоваться</button>
+      </div>
+      <div class="flip-container" id="flip-toggle">
         <div class="flipper">
           <div class="front">
             <div class="user__author">
               <div class="user__author-avatar">
-                <div class="user__author-pic"><img class="user__author-img" src="assets/img/ava.jpg" alt=""></div>
+                <div class="user__author-pic"><img class="user__author-img" src="assets/css/img/ava.jpg" alt=""></div>
               </div>
               <div class="user__author-info">
                 <div class="user__author-info-name">
@@ -46,13 +48,13 @@
             </div>
             <div id="front_btn">
               <p>
-                <input type="button" value="Мои работы" onclick="works.html">
+                <input type="button" value="Мои работы" onclick="parent.location='works.html'">
               </p>
               <p>
-                <input type="button" value="Обо мне" onclick="hompage.html">
+                <input type="button" value="Обо мне" onclick="parent.location='index.html'">
               </p>
               <p>
-                <input type="button" value="Блог" onclick="blog.html">
+                <input type="button" value="Блог" onclick="parent.location='blog.html'">
               </p>
             </div>
           </div>
@@ -73,7 +75,7 @@
             </div>
             <div id="back_btn">
               <p>
-                <input type="button" value="Главная" onclick="hompage.html">
+                <input type="button" value="Главная" onclick="parent.location='index.html'">
               </p>
               <p>
                 <input type="submit" value="Войти">

@@ -1,5 +1,5 @@
 .container__author{
-	background-image: url("bg_author.png");
+	background-image: url("img/bg_author.png");
 	height: 900px;
 	background-position: center;
 	background-size: cover;
@@ -14,7 +14,7 @@
 
 .author__btn{
 	width: 184px;
-	height: 44px;
+	background: none;
 	border: 1px solid #fff;
 	border-radius: 5%;
 	font-family: 'robotoregular';
@@ -23,8 +23,8 @@
 	padding: 15px 30px;
 
 		&:hover{
-			color: $blue;
-			border: 1px solid $blue;
+			color: $green;
+			background-color: #FFF;
 		}
 }
 
@@ -36,12 +36,13 @@
 }
 	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+	transform: rotateY(180deg);
+}
 
 .flip-container, .front, .back {
 	width: 380px;
 	height: 410px;
+
 }
 
 /* flip speed goes here */
@@ -59,6 +60,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	border-radius: 4%;
+	overflow: hidden;
 }
 
 /* front pane, placed above back */
@@ -99,7 +102,7 @@
 
 .socials__author{
 	text-align: center;
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 
 }
 
@@ -181,10 +184,6 @@ input {
 #back_btn input[type="submit"]:hover {
 	background-color: $blue;
 }
-
-//#back_btn input[type="submit"]:hover {
-//	background-color: $blue;
-//}
 
 #login > p {
 	text-align: center;
