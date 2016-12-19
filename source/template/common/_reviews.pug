@@ -1,29 +1,35 @@
 .reviews
 	.reviews__title
-			h1 ЧТО ОБО МНЕ ГОВОРЯТ
+		.wrap-title1
+			.title1 ЧТО ОБО МНЕ ГОВОРЯТ
 	.reviews__content
 		.reviews-left
 			.reviews-fa
 				span.fontawesome-quote-left 
 				.review 
-					p Все хорошо. Все живы. Во время эксперимента ни один котик не пострадал
+					p Эта особь проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
 				.review__author
-					img.review__author-img(src='assets/css/img/ava.jpg', alt='')
-					p Дмитрий Ковальчук
-					p Основатель Loftschool
+					img.review__author-img(src='assets/css/img/reviewer1.jpg', alt='')
+					.review__author-text
+						p 
+							b Дмитрий Ковальчук
+						p Основатель Loftschool
 		.reviews-right
 			.reviews-fa
 				span.fontawesome-quote-left 
 				.review 
-					p Все хорошо. Все живы. Во время эксперимента ни один котик не пострадал
+					p Этот код выдержет любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!
 				.review__author
-					img.review__author-img(src='assets/css/img/ava.jpg', alt='')
-					p Дмитрий Ковальчук
-					p Основатель Loftschool
+					img.review__author-img(src='assets/css/img/reviewer2.jpg', alt='')
+					.review__author-text
+						p 
+							b Зар Захаров
+						p Преподаватель Loftschool
 	.contact__form__wrapper
 		.contact__form-blur
 	.contact__form
-		h2 CВЯЗАТЬСЯ СО МНОЙ
+		.wrap-title2
+			.title2 CВЯЗАТЬСЯ СО МНОЙ
 		form#application(action='application.php', method='POST', name=' application ')
 			input#applicationName(name='name', maxlength='20', placeholder='Имя', required='')
 			input#applicationEmail(name='email', type='email', maxlength='20', placeholder='E-mail', required='')
@@ -33,3 +39,6 @@
 				input(type='submit', value='Отправить')
 			p
 				input(type='submit', value='Очистить')
+//.arrow__down
+//	a(href='#')
+//		img(src='assets/css/sprite/arrow_down.svg', alt='')

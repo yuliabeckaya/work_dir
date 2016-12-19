@@ -2,15 +2,13 @@
 
 .container {
 	position: relative;
-	max-width: 1800px;
+	max-width: 1920px;
 	
 }
 
 .header{
-	//background-image: url(sprite/portfolio_header.svg);
 	height: 600px;
 	background-image: url("img/bg_about.png");
-	//background-color: $blue;
 	background-position: center;
 	background-size: cover;
 }
@@ -19,21 +17,12 @@
 	position: absolute;
     margin: 5% 0 0 20%;
 }
-.header__right, .header__left {
-	width: 50%;
-	float: left;
-}
 
 .header__items {
 	padding: 30px 30px 0 30px;
-	margin-bottom: 120px;
+	margin-bottom: 60px;
 }
 
-
-.header__right {
-	
-	text-align: right;
-}
 
 .user{
 	text-align: center;
@@ -49,6 +38,8 @@
 	@include border-radius(50%);
 	overflow: hidden;
 	margin-bottom: 20px;
+	background-image: url("img/ava.jpg");
+	background-size: cover;
 
 }
 
@@ -66,6 +57,7 @@
 .user__info-custom{
 	font-size: 16px;
 	color: #fff;
+
 }
 
 .arrow__down{
@@ -79,7 +71,7 @@
 
 .triangle{
 	height: 160px;
-	margin-top: -96px;
+	margin-top: -94px;
 }
 
 .triangle__left{

@@ -1,8 +1,8 @@
 
 .button_container {
-  position: fixed;
+  position: absolute;
   top: 5%;
-  right: 2%;
+  right: 3%;
   height: 37px;
   width: 40px;
   cursor: pointer;
@@ -63,6 +63,7 @@
   visibility: hidden;
   transition: opacity .35s, visibility .35s, width .35s;
   z-index: 50;
+  font-family: 'bernier_regularregular';
   
   &:before {
     content: '';
@@ -114,6 +115,7 @@
       }
     }
   }
+
   nav {
     position: relative;
     height: 70%;
@@ -124,6 +126,7 @@
     text-align: center;
     z-index: 100;
   }
+  
   ul {
     list-style: none;
     padding: 0;

@@ -8,7 +8,7 @@
 	@include inlineblock(middle);
 	float: left;
 	@extend %clearfix;
-	padding: 20px;
+	padding: 0 20px 0 15px;
 
 	
 }

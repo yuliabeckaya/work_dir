@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/fonts/*.*">
@@ -18,66 +18,72 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="content">
-        <header class="header">
-          <div class="container">
-            <div class="header__items">
-              <div class="header__left">
-                <div class="socials">
-                  <ul class="socials__list-header">
-                    <li class="socials__item"><a class="socials__link" href="https://vk.com/kbicbka"><img class="socials__icon-vk" src="assets/css/sprite/vk.svg" alt=""></a></li>
-                    <li class="socials__item"><a class="socials__link" href="https://github.com/yuliabeckaya"><img class="socials__icon-github" src="assets/css/sprite/github.svg" alt=""></a></li>
-                    <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/russkiy"><img class="socials__icon-in" src="assets/css/sprite/in.svg" alt=""></a></li>
-                  </ul>
-                </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__items">
+            <div class="header__left">
+              <div class="socials">
+                <ul class="socials__list-header">
+                  <li class="socials__item"><a class="socials__link" href="https://vk.com/kbicbka"><img class="socials__icon-vk" src="assets/css/sprite/vk.svg" alt=""></a></li>
+                  <li class="socials__item"><a class="socials__link" href="https://github.com/yuliabeckaya"><img class="socials__icon-github" src="assets/css/sprite/github.svg" alt=""></a></li>
+                  <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/russkiy"><img class="socials__icon-in" src="assets/css/sprite/in.svg" alt=""></a></li>
+                </ul>
               </div>
-              <div class="header__right">
-                <div class="menu__close">
-                  <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
-                  <div class="overlay" id="overlay">
-                    <nav class="overlay-menu">
-                      <ul>
-                        <li><a href="works.html">МОИ РАБОТЫ</a></li>
-                        <li><a href="index.html">ОБО МНЕ</a></li>
-                        <li><a href="blog.html">БЛОГ</a></li>
-                        <li><a href="author.html">АВТОРИЗАЦИЯ</a></li>
-                      </ul>
-                    </nav>
-                  </div>
+            </div>
+            <div class="header__right">
+              <div class="menu__close">
+                <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+                <div class="overlay" id="overlay">
+                  <nav class="overlay-menu">
+                    <ul>
+                      <li><a href="works.html">МОИ РАБОТЫ</a></li>
+                      <li><a href="index.html">ОБО МНЕ</a></li>
+                      <li><a href="blog.html">БЛОГ</a></li>
+                      <li><a href="author.html">АВТОРИЗАЦИЯ</a></li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
-            <div class="user">
-              <div class="user__avatar">
-                <div class="user__avatar-pic"><img class="user__avatar-img" src="assets/css/img/ava.jpg" alt=""></div>
-              </div>
-              <div class="user__info">
-                <div class="user__info-name">Yulia Betskaya</div>
-                <div class="user__info-custom">
-                  <p>Личный сайт веб-разработчика</p>
-                </div>
+          </div>
+          <div class="user">
+            <div class="user__avatar">
+              <div class="user__avatar-pic">
+                <!--img.user__avatar-img(src='assets/css/img/ava.jpg', alt='')-->
               </div>
             </div>
-            <div class="arrow__down"><a href="#"><img src="assets/css/sprite/arrow_down.svg" alt=""></a></div>
+            <div class="user__info">
+              <div class="user__info-name">Юлия Бецкая</div>
+              <div class="user__info-custom">
+                <p class="user__info-custom">Личный сайт веб-разработчика</p>
+              </div>
+            </div>
           </div>
-          <div class="triangle">
-            <div class="triangle__left"></div>
-            <div class="triangle__right"></div>
-          </div>
-        </header>
+          <div class="arrow__down"><a href="#"><img src="assets/css/sprite/arrow_down.svg" alt=""></a></div>
+          <!--.triangle-->
+          <!--  .triangle__left-->
+          <!--  .triangle__right-->
+        </div>
+      </header>
+      <div class="container">
         <div class="title__works">
-          <h1>МОИ РАБОТЫ</h1>
+          <div class="wrap-title1">
+            <div class="title1">МОИ РАБОТЫ</div>
+          </div>
         </div>
         <div class="content__works">
           <div class="content__works-left">
             <div class="content__works-info">
               <div class="content__works-info-title"> 
-                <h2>Сайт школы онлайн образования</h2>
+                <div class="wrap-title2">
+                  <div class="title2">Сайт школы онлайн образования</div>
+                </div>
               </div>
               <div class="content__works-info-skills"> 
                 <p>HTML, CSS, JavaScript</p>
               </div>
-              <div class="content__works-info-btn"><a class="btn" href="#">Посмотреть сайт</a></div>
+              <div class="content__works-info-btn"><a class="btn" href="#"><img src="assets/css/sprite/link.svg" alt="">
+                  <p class="user__info-custom">Посмотреть сайт</p></a></div>
             </div>
           </div>
           <div class="content__works-right">
@@ -85,82 +91,95 @@
             <div class="content__works-right-controls"><a class="content__works-right-controls-item" href="#"><img class="work-4" src="assets/css/img/work-4.png" alt=""></a><a class="content__works-right-controls-item" href="#"><img class="work-3" src="assets/css/img/work-3.png" alt=""></a><a class="content__works-right-controls-item" href="#"><img class="work-2" src="assets/css/img/work-2.png" alt=""></a></div>
           </div>
         </div>
-        <div class="reviews">
-          <div class="reviews__title">
-            <h1>ЧТО ОБО МНЕ ГОВОРЯТ</h1>
+      </div>
+      <div class="reviews">
+        <div class="reviews__title">
+          <div class="wrap-title1">
+            <div class="title1">ЧТО ОБО МНЕ ГОВОРЯТ</div>
           </div>
-          <div class="reviews__content">
-            <div class="reviews-left">
-              <div class="reviews-fa"><span class="fontawesome-quote-left"> </span>
-                <div class="review"> 
-                  <p>Все хорошо. Все живы. Во время эксперимента ни один котик не пострадал</p>
-                </div>
-                <div class="review__author"><img class="review__author-img" src="assets/css/img/ava.jpg" alt="">
-                  <p>Дмитрий Ковальчук</p>
-                  <p>Основатель Loftschool</p>
-                </div>
+        </div>
+        <div class="reviews__content">
+          <div class="reviews-left">
+            <div class="reviews-fa"><span class="fontawesome-quote-left"> </span>
+              <div class="review"> 
+                <p>Эта особь проходила обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!</p>
               </div>
-            </div>
-            <div class="reviews-right">
-              <div class="reviews-fa"><span class="fontawesome-quote-left"> </span>
-                <div class="review"> 
-                  <p>Все хорошо. Все живы. Во время эксперимента ни один котик не пострадал</p>
-                </div>
-                <div class="review__author"><img class="review__author-img" src="assets/css/img/ava.jpg" alt="">
-                  <p>Дмитрий Ковальчук</p>
+              <div class="review__author"><img class="review__author-img" src="assets/css/img/reviewer1.jpg" alt="">
+                <div class="review__author-text">
+                  <p> <b>Дмитрий Ковальчук</b></p>
                   <p>Основатель Loftschool</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="contact__form__wrapper">
-            <div class="contact__form-blur"></div>
-          </div>
-          <div class="contact__form">
-            <h2>CВЯЗАТЬСЯ СО МНОЙ</h2>
-            <form id="application" action="application.php" method="POST" name=" application ">
-              <input id="applicationName" name="name" maxlength="20" placeholder="Имя" required="">
-              <input id="applicationEmail" name="email" type="email" maxlength="20" placeholder="E-mail" required="">
-              <textarea cols="30" rows="5" name="message" placeholder="Ваше сообщение" required=" "></textarea>
-            </form>
-            <div id="back_btn">
-              <p>
-                <input type="submit" value="Отправить">
-              </p>
-              <p>
-                <input type="submit" value="Очистить">
-              </p>
+          <div class="reviews-right">
+            <div class="reviews-fa"><span class="fontawesome-quote-left"> </span>
+              <div class="review"> 
+                <p>Этот код выдержет любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!</p>
+              </div>
+              <div class="review__author"><img class="review__author-img" src="assets/css/img/reviewer2.jpg" alt="">
+                <div class="review__author-text">
+                  <p> <b>Зар Захаров</b></p>
+                  <p>Преподаватель Loftschool</p>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="contact__form__wrapper">
+          <div class="contact__form-blur"></div>
+        </div>
+        <div class="contact__form">
+          <div class="wrap-title2">
+            <div class="title2">CВЯЗАТЬСЯ СО МНОЙ</div>
+          </div>
+          <form id="application" action="application.php" method="POST" name=" application ">
+            <input id="applicationName" name="name" maxlength="20" placeholder="Имя" required="">
+            <input id="applicationEmail" name="email" type="email" maxlength="20" placeholder="E-mail" required="">
+            <textarea cols="30" rows="5" name="message" placeholder="Ваше сообщение" required=" "></textarea>
+          </form>
+          <div id="back_btn">
+            <p>
+              <input type="submit" value="Отправить">
+            </p>
+            <p>
+              <input type="submit" value="Очистить">
+            </p>
           </div>
         </div>
       </div>
+      <!--.arrow__down-->
+      <!--	a(href='#')-->
+      <!--		img(src='assets/css/sprite/arrow_down.svg', alt='')-->
     </div>
     <footer>
       <div class="container">
-        <div class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item"><a class="navigation-link" href="works.html">Мои работы</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="index.html">Обо мне</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="blog.html">Блог</a></li>
-            <li class="navigation-item"><a class="navigation-link" href="author.html">Авторизация	</a></li>
-          </ul>
-        </div>
-        <div class="icons"> 
-          <div class="socials">
-            <ul class="socials__list-header">
-              <li class="socials__item"><a class="socials__link" href="https://vk.com/kbicbka"><img class="socials__icon-vk" src="assets/css/sprite/vk.svg" alt=""></a></li>
-              <li class="socials__item"><a class="socials__link" href="https://github.com/yuliabeckaya"><img class="socials__icon-github" src="assets/css/sprite/github.svg" alt=""></a></li>
-              <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/russkiy"><img class="socials__icon-in" src="assets/css/sprite/in.svg" alt=""></a></li>
+        <div class="footer__up">
+          <div class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-item"><a class="navigation-link" href="works.html">Мои работы</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="index.html">Обо мне</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="blog.html">Блог</a></li>
+              <li class="navigation-item"><a class="navigation-link" href="author.html">Авторизация	</a></li>
             </ul>
+          </div>
+          <div class="icons"> 
+            <div class="socials">
+              <ul class="socials__list-header">
+                <li class="socials__item"><a class="socials__link" href="https://vk.com/kbicbka"><img class="socials__icon-vk" src="assets/css/sprite/vk.svg" alt=""></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://github.com/yuliabeckaya"><img class="socials__icon-github" src="assets/css/sprite/github.svg" alt=""></a></li>
+                <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/russkiy"><img class="socials__icon-in" src="assets/css/sprite/in.svg" alt=""></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="footer">
           <div class="footer__text">
-            <div class="footer__text-left"> 
-              <p>Я веб-разработчик из Новосибирска, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.</p>
+            <div class="footer__text-left">
+              <p class="footer__text">Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.</p>
             </div>
-            <div class="footer__text-right"> 
-              <p>© Юлия Бецкая | создано с любовью в LoftSchool | 2016 			</p>
+            <div class="footer__text-right">
+              <p class="footer__text">© Юлия Бецкая | создано с любовью в LoftSchool | 2016</p>
             </div>
           </div>
         </div>

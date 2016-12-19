@@ -1,10 +1,20 @@
+.title__works{
+  text-align: center;
+  background-image: url("sprite/works_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 60px 0;
+
+}
+
+
 .content__works{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 940px;
+  height: 790px;
 
 }
 
@@ -18,22 +28,31 @@
 .content__works-info{
   text-align: center;
   width: 430px;
-  margin-top: 270px;
+  margin-top: 250px;
   position: absolute;
   margin-left: 30%;
+}
+
+.content__works-info-title, .content__works-info-skills{
+  margin-bottom: 30px;
 }
 
 .content__works-info-skills, .content__works-info-btn{
   padding: 20px 0 20px 0;
 }
 
+
 .btn{
    font-family: 'robotomedium';
    text-decoration: none;
    color: #fff;
    background-color: $blue;
-   padding: 20px;
+   padding: 12px 35px;
    border-radius: 7%;
+   display: inline-block;
+   vertical-align: top;
+   text-align: center;
+    
 }
 
 .content__works-right-display{

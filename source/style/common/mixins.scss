@@ -34,6 +34,13 @@
 	transition: $transition;
 }
 
+@mixin placeholder($placeholder) {
+	-webkit-placeholder: $placeholder;
+	-moz-placeholder: $placeholder;
+	-ms-placeholder: $placeholder;
+	-o-placeholder: $placeholder;
+	placeholder: $placeholder;
+}
 //responsive
 @function rem($px) {
 	@return $px / 16px + 0rem;

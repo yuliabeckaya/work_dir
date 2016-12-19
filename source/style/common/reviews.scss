@@ -5,8 +5,17 @@
   background-size: cover;
 }
 
+.reviews__title{
+  text-align: center;
+  background-image: url("sprite/about_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px 0;
+}
+
 .fontawesome-quote-left{
   color: #dee0e0;
+  font-size: 35px;
 }
 .reviews__content{
   display: flex;
@@ -17,27 +26,39 @@
 
 .reviews-left, .reviews-right{
   width: 400px;
-  margin: 0 20px;
+  margin: 0 5px;
 }
 
+.review{
+  margin-bottom: 25px;
+}
 .review__author{
   display: flex;
   flex-flow: row nowrap;
+  margin-left: 10px;
+  margin-bottom: 55px
 }
 
 .review__author-img{
   @include inlineblock(middle);
-  height: 43px;
-  width: 43px;
+  height: 80px;
+  width: 80px;
   background-color:#fff;
   @include border-radius(50%);
   overflow: hidden;
-  margin-bottom: 20px;
+  
+}
+
+.review__author-text{
+  margin: 20px 0 0 30px;
+
+    p {color: $green;
+    }
 }
 
 .contact__form__wrapper{
   width: 380px;
-  height: 436px;
+  height: 411px;
   margin: 0 auto;
   top: 0;
   left: 0;
@@ -55,13 +76,14 @@
 
 .contact__form{
   width: 380px;
-  height: 436px;
-  margin: -436px auto;
+  height: 411px;
+  margin: -411px auto;
   top: 0;
   left: 0;
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+  text-align: center;
 }
 
 .contacts__btn{
@@ -82,7 +104,6 @@
     border: 1px solid #fff;
     @include border-radius(5%)
     color: $black;
-    font-family: 'robotoregular';
     padding-left: 25px;
 }
 
@@ -90,45 +111,9 @@ textarea{
   width: 94%;
     height: 106px;
     background-color: #fff;
-    margin: 25px 0 25px 0;
+    margin: 25px 0 15px 0;
     padding: 20px 0 0 25px;
     border: 1px solid #fff;
     @include border-radius(5%)
     color: $black;
-    font-family: 'robotoregular';
-}
-
-/*Стили полей при клике по ним*/
-//#applicationName:focus, #applicationEmail:focus {
-//    border: 1px solid #30ad64;
-//}
- 
-/*Стили текста, выводящегося в placeholder*/
-::-webkit-input-placeholder {
-    color: $black;
-    font-family: 'robotoregular', sans-serif;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}
- 
-::-moz-placeholder  {
-    color: $black;
-    font-family: 'robotoregular', sans-serif;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}  /* Firefox 19+ */
- 
-:-moz-placeholder {
-    color: $black;
-    font-family: 'robotoregular', sans-serif;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}  /* Firefox 18- */
- 
-:-ms-input-placeholder {
-    color: $black;
-    font-family: 'robotoregular', sans-serif;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}
- 
-::placeholder {
-    color: $black;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
-}
+}  

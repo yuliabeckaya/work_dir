@@ -14,29 +14,59 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: strech;
+  margin-top: -185px;
+  background-size: cover;
 }
- 
+
+.about__left{
+  background-image: url("sprite/about_bg_left.svg");
+}
+
+.about__right{
+  background-image: url("sprite/about_bg_right.svg");
+} 
+
 .about__me, .about__item{
   align-content: flex-start;
- width: 50%;
+  width: 50%;
+  text-align-last: center;
 }
 
+.about__me-text{
+  text-align: left;
+}
+.about__me-text1{
+	margin: 20px 0 20px 0;
 
+}
+
+.about__me{
+  background-image: url("sprite/about_header.svg");
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  margin-top: 185px;
+
+}
+  
 .about__me-foto{
-  width: 443px;
-  height: 390px;
+  width: 467px;
+  height: 400px;
   background-image: url("img/foto.jpg");
   background-position: center;
   background-size: cover;
+  margin-bottom: 20px;
+  margin-top: 185px;
 }
 
 .skills{
   width: 100%;
   padding-left: 36px;
+  text-align: center;
+  margin-top: 185px;
 }
 
 .text{
-    margin: 50px 30px 70px 0;
+    margin: 30px 30px 20px 0;
     text-align: left;
 }
 
@@ -46,13 +76,15 @@
 }
 
 .frontend{
-	padding-left: 50px;
+	padding-left: 10px;
+  text-align: left;
 
 }
 
 .g-circles {
   fill: none;
-  stroke-width: 15;
+  stroke-width: 20;
+  //stroke-dasharray: 150 283;
   
 }
 .sector {

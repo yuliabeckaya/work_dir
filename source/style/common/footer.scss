@@ -1,12 +1,15 @@
 footer{
-	height: 140px;
+	height: $footer-height;
 	background-color: $black;
-	margin-top: -140px;
+	margin-top: -$footer-height;
+	opacity: .8;
 
 }
 
 .footer__up{
 	height: 75px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .navigation-item{
@@ -36,6 +39,7 @@ footer{
 
 .icons{
 	text-align: right;
+	padding-top: 20px;
 }
 
 
@@ -43,6 +47,7 @@ footer{
   color: #fff;
   font-size: 16px;
   opacity: .5;
+  padding-top: 6px;
 }
 
 .footer__text-left {

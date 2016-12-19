@@ -1,5 +1,5 @@
 .map{
-	height: 930px;
+	height: 690px;
 	background-image: url(img/map.png);
 	background-position: center;
 	background-size: cover;
@@ -9,10 +9,13 @@
 
 .contacts{
 	width: 380px;
-    height: 300px;
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    margin-top: 250px;
+    transform: translate(-50%, -50%);
+    text-align: center;
     background: #e5f7f4;
-    opacity: .8;
+    opacity: .7;
     border-radius: 3%;
     padding: 20px 0px 0px 0px;
        
@@ -23,7 +26,8 @@
 }
 
 .contants_content{
-	padding: 30px;
+	padding: 30px 0 30px 45px;
+	text-align: left;
 }
 
 .cnt-icon{
@@ -32,13 +36,19 @@
 }
 
 .cnt-text{
-	width: 325px;
-	height: 50px;
 	margin-left: 20px;
+	color: $black;
+	
+	&:hover{
+		color: $blue;
+	}
 }
 
 .cnt{
 	display: flex;
 	flex-flow: row nowrap;
+	text-decoration: none;
+	padding: 20px 0;
+
 }
 

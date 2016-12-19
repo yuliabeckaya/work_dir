@@ -1,6 +1,3 @@
-body {
-  margin: 0;
-}
 $red: #e44845;
 $blue: #009688;
 $black: #373e42;
@@ -9,8 +6,8 @@ $green: #00bfa5;
 $marengo: #455a64;
 
 $container-width: 1800px;
-$footer-height: 180px;
-$body-font: 'bernier_regularregular', sans-serif;
+$footer-height: 140px;
+$body-font: 'robotoregular', sans-serif;
 
 @import 'common/mixins';
 @import 'common/adjustment';
@@ -26,6 +23,9 @@ $body-font: 'bernier_regularregular', sans-serif;
 @import 'common/socials';
 @import 'common/flip';
 @import 'common/reviews';
+
+
+@import 'common/media';
 
 
 
