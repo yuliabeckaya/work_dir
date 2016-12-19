@@ -4,20 +4,39 @@ footer{
 	margin-top: -$footer-height;
 	opacity: .8;
 
+	@include tablets{
+		height: 250px;
+	}
+
 }
 
-.footer__up{
-	height: 75px;
+.footer__up{	
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
+	@include tablets {
+    display: flex;
+    flex-flow: column wrap;
+  	justify-content: center;
+  	text-align: center;
+    padding-bottom: 20px;
+  }
 }
 
+.navigation-list{
+
+	@include tablets {
+    width: 100%;
+    text-align: center;
+    padding: 0 20%;
+  }
+}
 .navigation-item{
 	font-size: 16px;
 	float: left;
 	@extend %clearfix;
 	padding: 20px;
 	font-family: 'robotomedium';
+
 }
 
 .navigation-link{
@@ -40,6 +59,11 @@ footer{
 .icons{
 	text-align: right;
 	padding-top: 20px;
+
+	@include tablets {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
@@ -54,6 +78,12 @@ footer{
 	text-align: left;
     width: 50%;
     display: inline-block;
+
+    @include laptop, tablets{
+    	width: 100%;
+    	text-align: center;
+    	margin-bottom: 20px;
+    }
 }
 
 .footer__text-right{
@@ -61,4 +91,10 @@ footer{
     width: 50%;
     display: inline-block;
     float: right;
+    @extend %clearfix;
+
+    @include laptop, tablets{
+    	width: 100%;
+    	text-align: center;
+    }
 }

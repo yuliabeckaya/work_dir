@@ -8,71 +8,7 @@ block content
       include ../common/_header
       section
         .container
-          .about
-            .about__left
-              .about__me
-                .wrap-title1
-                   .title1 ОБО МНЕ
-              .about__item
-                .full__content__about__me
-                  .about__me-foto
-                    //img(src='assets/css/img/foto.jpg', alt='')
-                  .wrap-title2
-                    .title2 Кто я
-                  .about__me-text
-                    p.about__me-text1
-                      | Я веб разработчик из Санкт-Петербурга. Мне 33 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                    p.about__me-text2
-                      | Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-            .about__right
-              .skills
-                .wrap-title2
-                  .title2 Чем я могу быть вам полезна
-                .text
-                  p Больше всего меня привлекает Frontend разработка, но я также знакома и могу решать несложные задачи на Backend. Но давайте по порядку.
-                .frontend
-                  h3 Frontend
-                  ul.frontend__items
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                  h3 Backend
-                  ul.frontend__items
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                  h3 WorkFlow
-                  ul.frontend__items
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
-                    li.frontend_item
-                      svg.g-circles(width='120', height='120')
-                        circle(r='45', cx='60', cy='60', stroke='#dfdcd5', fill='none')
-                        circle.sector(r='45', cx='60', cy='60', stroke='#10c1a8', transform='rotate(-90 60 60)')
+          include ../common/_about
       section.map
         .container
             .map-google

@@ -70,29 +70,26 @@
 }
 
 .triangle{
+	display: flex;
+	position: absolute;
 	height: 160px;
-	margin-top: -94px;
+	margin-top: -64px;
 }
 
 .triangle__left{
-	width: 0;
-height: 0;
-border-style: solid;
-border-width: 160px 0 0 960px;
-border-color: transparent transparent transparent #efeee9;
-float: left;
-@extend %clearfix;
+	width: 50%;
+	border-style: solid;
+	border-width: 160px 0 0 960px;
+	border-color: transparent transparent transparent #efeee9;
 
 }
 
 .triangle__right{
-	width: 0;
-height: 0;
-border-style: solid;
-border-width: 0 0 160px 960px;
-border-color: transparent transparent #efeee9 transparent;
-margin-left: 50%;
-
+	width: 50%;
+	border-style: solid;
+	border-width: 0 0 160px 960px;
+	border-color: transparent transparent #efeee9 transparent;
+	
 }
 
 

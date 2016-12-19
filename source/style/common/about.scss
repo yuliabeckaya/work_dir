@@ -2,9 +2,6 @@
 .about{
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: strech;
-  height: 830px;
   padding-top: 20px;
 }
 
@@ -12,73 +9,115 @@
   width: 50%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: strech;
-  margin-top: -185px;
-  background-size: cover;
+  align-content: flex-start;
+  
+  @include desktop {
+    width: 50%;
+  }
+
+  @include tablets {
+    width: 100%;
+    margin-bottom: 50px;
+    flex-flow: column wrap;
+  }
+    
 }
 
-.about__left{
-  background-image: url("sprite/about_bg_left.svg");
+.full__content__about__me{
+    padding: 10px;
 }
-
-.about__right{
-  background-image: url("sprite/about_bg_right.svg");
-} 
 
 .about__me, .about__item{
-  align-content: flex-start;
   width: 50%;
-  text-align-last: center;
+  text-align: center;
+  
+  @include desktop {
+    width: 100%;
+
+  }
 }
 
 .about__me-text{
   text-align: left;
+  padding: 20px;
 }
 .about__me-text1{
 	margin: 20px 0 20px 0;
 
 }
 
-.about__me{
-  background-image: url("sprite/about_header.svg");
-  background-repeat: no-repeat;
-  padding-top: 60px;
-  margin-top: 185px;
+.about__me-wrap{
+  max-width: 100%;
+
+  @include desktop {
+    margin-top: -30px;
+    margin-bottom: 50px;
+
+  }
 
 }
-  
+ 
+.about__me-title{
+ margin-top: -86px;
+
+  @include desktop {
+    margin-top: -150px;
+
+  }
+}  
+
 .about__me-foto{
-  width: 467px;
-  height: 400px;
+  width: 24vw;
+  height: 25vw;
   background-image: url("img/foto.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 20px;
-  margin-top: 185px;
+  
+  @include desktop {
+    width: 45vw;
+    height: 50vw;
+    padding: 10px;
+  }
+
+  @include tablets {
+    width: 85vw;
+    height: 90vw;
+    margin: 30px 30px 50px 30px;
+  }
 }
 
 .skills{
   width: 100%;
-  padding-left: 36px;
   text-align: center;
-  margin-top: 185px;
-}
+  margin-top: 25px;
+}  
 
 .text{
-    margin: 30px 30px 20px 0;
+    margin: 30px 30px 20px 30px;
     text-align: left;
 }
 
+.frontend_items{
+
+    @include desktop {
+    text-align: center;
+  }
+}
 .frontend_item{
 	display: inline-block;
 	padding: 20px;
 }
 
 .frontend{
-	padding-left: 10px;
+	padding-left: 30px;
   text-align: left;
 
+  @include tablets {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+  }
 }
 
 .g-circles {
