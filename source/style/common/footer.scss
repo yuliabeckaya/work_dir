@@ -6,11 +6,15 @@ footer{
 
 	@include tablets{
 		height: 250px;
+    margin-top: -250px;
+    background-color: #384246;
+    opacity: .99;
 	}
 
 }
 
 .footer__up{	
+  padding-bottom: 20px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
 	@include tablets {
@@ -18,7 +22,6 @@ footer{
     flex-flow: column wrap;
   	justify-content: center;
   	text-align: center;
-    padding-bottom: 20px;
   }
 }
 
@@ -76,10 +79,10 @@ footer{
 
 .footer__text-left {
 	text-align: left;
-    width: 50%;
-    display: inline-block;
+  width: 50%;
+  display: inline-block;
 
-    @include laptop, tablets{
+    @include tablets{
     	width: 100%;
     	text-align: center;
     	margin-bottom: 20px;
@@ -93,7 +96,7 @@ footer{
     float: right;
     @extend %clearfix;
 
-    @include laptop, tablets{
+    @include tablets{
     	width: 100%;
     	text-align: center;
     }

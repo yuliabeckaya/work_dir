@@ -54,6 +54,21 @@ body {
 .container {
 	margin: 0 auto;
 	
+	@include desktop{
+		max-width: 1160px;
+	}
+
+	@include laptop{
+		max-width: 952px;
+	}
+
+	@include tablets{
+		max-width: 728px;
+	}
+
+	@include phones{
+		max-width: 440px;
+	}
 }
 
 

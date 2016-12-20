@@ -1,42 +1,75 @@
 .reviews{
   height: 1140px;
-  min-width: 900px;
-  background-image: url("img/bg_works.png");
+  background-image: url("img/bg_works2.png");
   background-size: cover;
+
+  @include phones{
+      display: flex;
+      flex-flow: column wrap;
+      height: 1550px;
+  }
 }
 
 .reviews__title{
   text-align: center;
-  background-image: url("sprite/about_header.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("sprite/about_header.svg") center no-repeat;
   padding: 20px 0;
+  margin-bottom: 50px;
+
+    @include phones{
+      width: 100%;
+  }
 }
 
 .fontawesome-quote-left{
-  color: #dee0e0;
+  color: $grey;
   font-size: 35px;
+
+  @include phones{
+      font-size: 100px;
+    
+
+  }
 }
 .reviews__content{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 50px 0;
+  margin-bottom: 50px;
+
+  @include phones{
+      display: flex;
+      flex-flow: column wrap;
+      margin: 0 auto 50px;
+
+  }
   }
 
 .reviews-left, .reviews-right{
-  width: 400px;
-  margin: 0 5px;
+  max-width: 400px;
+  margin: 0 10px;
 }
 
 .review{
   margin-bottom: 25px;
+
+
+  @include phones{
+    margin-left: 65px;
+    margin-top: -60px;
+                
+  }
 }
 .review__author{
   display: flex;
   flex-flow: row nowrap;
   margin-left: 10px;
-  margin-bottom: 55px
+  margin-bottom: 55px;
+
+  @include phones{
+      margin-left: 45px;
+
+  }
 }
 
 .review__author-img{
@@ -58,20 +91,45 @@
 
 .contact__form__wrapper{
   width: 380px;
-  height: 411px;
+  height: 433px;
   margin: 0 auto;
   top: 0;
   left: 0;
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+
+  @include phones{
+    width: 390px;
+    height: 442px;
+
+  }
 }
 
 .contact__form-blur{
   width: 100%;
   height: 100%;
-  background-image: url("img/bg_works.png");
+  background: url("img/bg_works.png") center no-repeat;
   filter: blur(20px);
+  background-size: 1800px;
+  background-position: -723px -267px;
+
+  @include laptop{
+    background-size: 1373px;
+  background-position: -263px -467px;
+
+  }
+  @include tablets{
+        background-position: -210px -457px;
+    background-size: 1251px;
+
+  }
+
+  @include phones{
+        background-position: -210px -457px;
+    background-size: 1251px;
+
+  }
 }
 
 .contact__form{
@@ -84,6 +142,12 @@
   border-radius: 10px;
   position: relative;
   text-align: center;
+
+  @include phones{
+    width: 390px;
+    height: 442px;
+
+  }
 }
 
 .contacts__btn{

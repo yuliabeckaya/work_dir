@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   padding: 60px 0;
+  margin-bottom: 50px;
 
 }
 
@@ -14,7 +15,13 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 790px;
+  margin-bottom: 50px;
+
+    @include tablets {
+    width: 100%;
+    margin-bottom: 50px;
+    flex-flow: column wrap;
+  }
 
 }
 
@@ -23,30 +30,60 @@
   text-align: center;
   position: relative;
 
+    @include tablets {
+    width: 100%;
+    margin-bottom: 50px;
+    flex-flow: column wrap;
+  }
+
 }
 
 .content__works-info{
   text-align: center;
-  width: 430px;
+  //width: 430px;
   margin-top: 250px;
-  position: absolute;
-  margin-left: 30%;
+  //position: absolute;
+  //margin-left: 30%;
+
+    @include tablets {
+    display: none;
+  }
 }
 
+#content__works-info{
+  display: none;
+
+    @include tablets {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+    }
+}
 .content__works-info-title, .content__works-info-skills{
   margin-bottom: 30px;
 }
 
 .content__works-info-skills, .content__works-info-btn{
-  padding: 20px 0 20px 0;
+  padding: 30px 0;
+  text-align: center;
+  box-sizing: border-box;
 }
 
+.content__works-info-skills{
+  border-bottom: 1px solid $blue;
+  border-top: 1px solid $blue;
+  margin: 0 200px;
+
+    @include desktop {
+      margin: 0 100px;
+    }
+}
 
 .btn{
    font-family: 'robotomedium';
    text-decoration: none;
-   color: #fff;
-   background-color: $blue;
+   color: #fff bold;
+   background-color: $green;
    padding: 12px 35px;
    border-radius: 7%;
    display: inline-block;
@@ -70,7 +107,20 @@
 }
 .content__works-right-controls-item{
   height: 210px;
-  width: 475px;
+  width: 50%;
+  padding: 0 40px;
+
+    @include desktop{
+      padding: 0 25px;
+    }
+
+    @include laptop{
+      padding: 0 15px;
+    }
+
+    @include tablets{
+      padding: 0 15px;
+    }
  }
 
  .work-4, .work-3, .work-2{
