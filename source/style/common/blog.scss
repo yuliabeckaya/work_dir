@@ -1,9 +1,21 @@
 .header-blog{
 	//background-image: url(sprite/portfolio_header.svg);
-	height: 400px;
+	height: 430px;
 	background-image: url("img/bg_about.png");
 	background-position: center;
 	background-size: cover;
+
+	@include laptop{
+		height: 405px;
+	}
+
+	@include tablets{
+		height: 378px;
+	}
+
+	@include phones{
+		height: 352px;
+	}
 }
 
 .header__items-blog{
@@ -38,11 +50,13 @@
 
 .container__blog{
 	margin: 0 auto;
-	width: 60%;
-	height: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
+	@include tablets{
+		flex-direction: column;
+	}
 }
 
 .navigation__blog, .sidebar{
@@ -50,10 +64,7 @@
 	flex-direction: column;
 	flex-wrap: nowrap;
 }
-.sidebar{
-	width: 20%;
-		
-}
+
 .navigation__blog-link{
 	text-decoration: none;
     text-align: right;
@@ -90,7 +101,15 @@
 	margin-top: 65px;
 	line-height: 26px;
 	margin-right: 2%;
+
+	@include laptop{
+		width: 20%;
+		
+	}
 	
+	@include tablets{
+		display: none;
+	}
 }
 .sidebar_active {
 	left: 0%;
@@ -106,8 +125,18 @@
 
 .articles {
 	float: left;
-	width: 48%;
+	@extend %clearfix;
+	width: 50%;
 	
+	@include laptop{
+		width: 70%;
+		
+	}
+
+	@include tablets{
+		width: 100%;
+		padding: 0 20px;
+	}
 }
 .articles__list {
 	padding-left: 0;

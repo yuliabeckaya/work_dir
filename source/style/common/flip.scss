@@ -13,29 +13,30 @@
 }
 
 .author__btn{
-	width: 184px;
-	background: none;
-	border: 1px solid #fff;
-	border-radius: 5%;
-	font-family: 'robotoregular';
-	text-decoration: none;
-	color: #fff;
-	padding: 15px 30px;
+	position: absolute;
+    text-align: center;
+    background: none;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 26px;
+    top: 24px;
+    right: 16px;
 
 		&:hover{
 			color: $green;
 			background-color: #FFF;
+			border: 1px solid #fff;
 		}
 }
 
-
-/* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000px;
 	margin: 0 auto;
 }
-	/* flip the pane when hovered */
-	//.flip-container:hover .flipper, .flip-container.hover .flipper {
+	
+//.flip-container:hover .flipper, .flip-container.hover .flipper {
 	//transform: rotateY(180deg);
 //}
 
@@ -45,14 +46,12 @@
 
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 	background: #e5f7f4;
@@ -64,7 +63,7 @@
 	overflow: hidden;
 }
 
-/* front pane, placed above back */
+
 .front {
 	z-index: 2;
 	/* for firefox 31 */
@@ -75,7 +74,7 @@
 	text-align: center;
     left: 0;
     vertical-align: middle;
-    margin: 22px auto;
+    margin: 42px auto;
 }    
 .user__author-avatar{
 	@include inlineblock(middle);
@@ -86,6 +85,35 @@
 	overflow: hidden;
 	margin-bottom: 20px;
 
+}
+
+.btn__list {
+    display: table;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.btn__list-item {
+    background: rgba(0, 191, 165, 0.85);
+    color: #fff;
+    font-weight: 500;
+    display: table-cell;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+
+    &:not(:last-child) {
+    border-right: 1px solid #dee3e7;
+	}
+
+	&:hover{
+		background-color: $blue;
+	}
+}
+
+.btn-link{
+	color: #fff;
 }
 
 .user__author-pic {
@@ -106,7 +134,6 @@
 
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
@@ -209,4 +236,8 @@ input {
 	margin-top: -60px;
 	text-align: center;
 	color: #fff;
+
+	p{
+		color: #fff;
+	}
 }

@@ -1,6 +1,7 @@
 .container__author
+	//include ../common/_parallax
 	.author__header
-		button.author__btn(onclick="document.querySelector('#flip-toggle').classList.toggle('hover');") Авторизоваться
+		a.author__btn(href='#') Авторизоваться
 	#flip-toggle.flip-container
 		.flipper
 			.front
@@ -10,17 +11,24 @@
 							img.user__author-img(src='assets/css/img/ava.jpg', alt='')
 					.user__author-info
 						.user__author-info-name
-							p.user__author-name Yulia Betskaya
+							p.user__author-name Юлия Бецкая
 						.ser__author-info-custom
 							p Личный сайт веб-разработчика
 				.socials__author
 					include ../common/_socials
 				#front_btn
-					p
+					ul.btn__list
+						li.btn__list-item
+							a.btn-link(href='works.html') Мои работы
+						li.btn__list-item
+							a.btn-link(href='index.html') Обо мне
+						li.btn__list-item
+							a.btn-link(href='blog.html') Блог
+					//p
 						input(type='button', value='Мои работы', onclick="parent.location='works.html'")
-					p
+					//p
 						input(type='button', value='Обо мне', onclick="parent.location='index.html'")
-					p
+					//p
 						input(type='button', value='Блог', onclick="parent.location='blog.html'")
 			.back
 				.clr
@@ -39,4 +47,4 @@
 					p
 						input(type='submit', value='Войти')
 .footer__author
-	p © Юлия Бецкая | создано с любовью в LoftSchool | 2016
+		p © Юлия Бецкая | создано с любовью в LoftSchool | 2016
